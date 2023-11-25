@@ -17,7 +17,7 @@ The current port ranges are from 1000-10000. If you desire a different range, yo
 3. We need to copy down the scripts.
 ```git clone https://github.com/bwithe/docker-nmap```
 
-4. Let's cd in "docker-nmap" and execute the install and build script.
+4. Let's cd in "docker-nmap" and execute the build script.
 ```sudo bash dockerbuild.sh```
 
 5. Once we've done that, we can run ```sudo docker images``` to see our containers listed amongst the builds.

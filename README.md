@@ -2,13 +2,13 @@
 
 ** FOR TRAINING PURPOSES ONLY **
 
-You will be able to automate the Docker install if you don't have it, and automate creating containers to analyze with nmap.
+We will be able to create Docker containers to analyze with nmap.
 
-So far, I've only got apache running on the clients, but will update as needed, or requested.
+So far, I've only got apache running on the clients, but I will update as needed, or requested.
 
-Based on the user input, the script will create a variable amount of containers, all running on different ports.
+Based on the user input, the script will create a variable amount of containers (based off user input), all running on different ports.
 
-The ports range from 1000-10000. If you desire a different range, you can modify the ```dockerbuild.sh```.
+The current port ranges are from 1000-10000. If you desire a different range, you can modify the ```dockerbuild.sh```.
 
 # Hands on keyboards
 2. We need to copy down the scripts.

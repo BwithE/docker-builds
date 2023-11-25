@@ -12,7 +12,7 @@ The current port ranges are from 1000-10000. If you desire a different range, yo
 
 # Hands on keyboards
 1. If you do not have Docker installed, please do so now.
-```sudo apt install docker.io``` (RUNNING ON DEBIAN or KALI)
+```sudo apt install docker.io``` (RUNNING ON DEBIAN)
   
 3. We need to copy down the scripts.
 ```git clone https://github.com/bwithe/docker-nmap```

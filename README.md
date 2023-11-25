@@ -28,3 +28,7 @@ The current port ranges are from 1000-10000. If you desire a different range, yo
 
 8. Finally! Now that we've verified our IP ranges, we can use nmap on the containers and find the random ports the script first built!
 
+# Stopping and removing the containers
+1. Just run ```sudo bash stopcontainers.sh``` to stop all previously running containers.
+
+2. If you'd like to purge the previous created images, you can run ```sudo bash docker_img_cleanup.sh```

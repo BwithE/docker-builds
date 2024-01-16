@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set the number of containers you want to create
+# sets the number of containers you want to create
 read -p "How many containers would you like to test out?: " num_containers
 #num_containers=5
 

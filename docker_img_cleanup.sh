@@ -1,5 +1,13 @@
 #!/bin/bash
 
+clear
+# Checks to verify that the script is running as root
+if [[ $EUID -ne 0 ]]; then
+   echo "THIS SCRIPT NEEDS TO BE RUN AS ROOT."
+   echo "EX: sudo ./boot-tools.sh"
+   exit 1
+fi
+clear
 # run this script after you've stopped all previous containers
 
 # Get the list of image IDs using "docker images"

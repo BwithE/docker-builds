@@ -30,5 +30,5 @@ do
 
   echo "Container $i is running on port $random_port"
 
-  sudo rm -f apache/Dockerfile_$1
+  rm -f apache/Dockerfile_$1
 done

@@ -36,7 +36,6 @@ docker exec -it host service ssh start
 
 
 # Working on pulling pre-built dockerfiles instead of dinding commands
-: << 'COMMENT'
 clear
 read -p "What is the username you'd like to use on the 'host' Docker container: " your_user
 echo "Please enter the password for $your_user: "
@@ -44,9 +43,8 @@ echo "Please enter the password for $your_user: "
 #docker exec -it host passwd root # set root pass
 docker exec -it host useradd -m -s /bin/bash $your_user
 docker exec -it host passwd $your_user # add passwd for $username
-docker exec -it host git clone https://github.com/bwithe/docker-builds
-docker exec -it host bash docker-builds/dockerbuild.sh
-COMMENT
+#docker exec -it host git clone https://github.com/bwithe/docker-builds
+#docker exec -it host bash docker-builds/dockerbuild.sh
 
 ########## OLD WAY #############
 clear

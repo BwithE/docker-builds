@@ -20,10 +20,10 @@ do
   #random_ip=$((RANDOM % (250 - 10 + 1) + 10))
   
   # Generate a Dockerfile for each container based on the template
-  sed "s/REPLACE_PORT/$random_port/g" /docker-builds/apache/Dockerfile > apache/Dockerfile_$i
+  sed "s/REPLACE_PORT/$random_port/g" apache/Dockerfile > apache/Dockerfile_$i
 
   # Build the Docker image
-  docker build -t apache-server_$i -f /docker-builds/apache/Dockerfile_$i .
+  docker build -t apache-server_$i -f apache/Dockerfile_$i .
 
   # Run the Docker container with a dynamically assigned port
   docker run -d -p $random_port:80  apache-server_$i

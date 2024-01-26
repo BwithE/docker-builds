@@ -15,7 +15,7 @@ The current port ranges are from 1000-10000. If you desire a different range, yo
 ```sudo apt install docker.io``` (RUNNING ON DEBIAN)
   
 3. We need to copy down the scripts.
-```git clone https://github.com/bwithe/docker-nmap```
+```git clone https://github.com/bwithe/docker-builds```
 
 4. Let's cd in "docker-nmap" and execute the build script.
 ```sudo bash dockerbuild.sh```

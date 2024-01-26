@@ -34,6 +34,8 @@ docker exec -it host apt update -y
 docker exec -it host apt install -y net-tools openssh-server iputils-ping nmap arp-scan nano git
 docker exec -it host service ssh start
 
+
+# Working on pulling pre-built dockerfiles instead of dinding commands
 : << 'COMMENT'
 clear
 read -p "What is the username you'd like to use on the 'host' Docker container: " your_user

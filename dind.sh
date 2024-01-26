@@ -59,7 +59,7 @@ for ((i=1; i<=$num_containers; i++)); do
     docker exec -it host docker exec -it $container_name apt update -y
     docker exec -it host docker exec -it $container_name apt install openssh-server -y
     docker exec -it host docker exec -it $container_name service ssh start
-read -p "What is the username you'd like to use on the 'dind#' containers?: " $dinduser
+read -p "What is the username you'd like to use on the 'dind#' containers?: " dinduser
     docker exec -it host docker exec -it $container_name useradd -m -s /bin/bash $dinduser
 echo "Please enter the password for $dinduser: "
     docker exec -it host docker exec -it $container_name passwd $dinduser # add pass for dinduser

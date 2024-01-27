@@ -54,6 +54,7 @@ clear
 echo "Spinning up $num_containers. Please wait ..."
 # Run Docker containers inside the host
 for ((i=1; i<=$num_containers; i++)); do
+    clear
     container_name="dind$i"
     docker exec -it host docker run -d --name="$container_name" --hostname="$container_name" ubuntu tail -f /dev/null
     docker exec -it host docker exec -it $container_name apt update -y

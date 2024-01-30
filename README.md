@@ -10,7 +10,7 @@ Based on the user input, the script will create a variable amount of containers 
 
 The current port ranges are from 1000-10000. If you desire a different range, you can modify the ```dockerbuild.sh```.
 
-# Hands on keyboards
+# Usage
 1. If you do not have Docker installed, please do so now.
 ```sudo apt install docker.io``` (RUNNING ON DEBIAN)
   

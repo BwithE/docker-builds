@@ -40,13 +40,9 @@ clear
 read -p "What is the username you'd like to use on the 'host' Docker container: " your_user
 echo "Please enter the password for $your_user: "
 # Add a new user to the host container (replace 'your_user' with the desired username)
-#docker exec -it host passwd root # set root pass
 docker exec -it host useradd -m -s /bin/bash $your_user
 docker exec -it host passwd $your_user # add passwd for $username
-#docker exec -it host git clone https://github.com/bwithe/docker-builds
-#docker exec -it host bash docker-builds/dockerbuild.sh
 
-########## OLD WAY #############
 clear
 # User input for the number of Docker containers
 read -p "Enter the number of Docker in Docker containers to spin up: " num_containers
@@ -65,5 +61,3 @@ read -p "What is the username you'd like to use on the 'dind$i' containers?: " d
 echo "Please enter the password for $dinduser: "
     docker exec -it host docker exec -it $container_name passwd $dinduser # add pass for dinduser
 done
-########## OLD WAY #############
-

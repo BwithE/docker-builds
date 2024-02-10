@@ -39,8 +39,7 @@ docker exec -it host service ssh start
 clear
 read -p "What is the username you'd like to use on the 'host' Docker container: " your_user
 echo "Please enter the password for $your_user: "
-# Add a new user to the host container (replace 'your_user' with the desired username)
-docker exec -it host useradd -m -s /bin/bash $your_user
+docker exec -it host useradd -m -s /bin/bash $your_user # username variable
 docker exec -it host passwd $your_user # add passwd for $username
 
 clear

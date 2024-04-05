@@ -1,4 +1,11 @@
 #!/bin/bash
+clear
+# Checks to verify that the script is running as root
+if [[ $EUID -ne 0 ]]; then
+   echo "THIS SCRIPT NEEDS TO BE RUN AS SUDO."
+   echo "EX: sudo ./dind.sh"
+   exit 1
+fi
 
 clear
 # check if Docker is installed
